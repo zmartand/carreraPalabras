@@ -1,0 +1,13 @@
+*{
+    background-color: #dad7cd;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    background-color: #476a6f;
+}
