@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrera de Palabras</title>
+  <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <div id="menu">
+        <button>Reiniciar</button>
+        <button>Inicio</button>
+    </div>
+    <div id="contenedor1">
+        <div id="vidas">Vidas: <span id="contarVidas">3</span></div>
+        <div id="nivel">Nivel: <span id="contarNivel">1</span></div>
+        <div id="instrucciones">Escribe la palabra que aparece antes de que desaparezca:</div>
+        <div id="tiempoRestante">Tiempo restante: <span id="contarTiempoRestante"></span></div>
+    </div>
+    <div id="palabra"></div>
+    <input type="texto" id="usuarioInput" placeholder="Escribe aquí la palabra..." autofocus>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
