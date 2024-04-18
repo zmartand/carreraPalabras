@@ -1,5 +1,5 @@
 *{
-    background-color: #dad7cd;
+    background-color: #e0e1dd;
 }
 
 
@@ -7,7 +7,25 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
-h1{
-    background-color: #476a6f;
+#titulo h1{
+    background-color: #3D5820;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#titulo{
+    width: 100%;
+    text-align: center;
+    color: #e0e2db;
+
+}
+
+#instrucciones{
+    border: 3.5px solid #3D5820;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 50%;
+    text-align: center;
 }
