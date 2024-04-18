@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juego.css" beforeDir="false" afterPath="$PROJECT_DIR$/juego.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juego.html" beforeDir="false" afterPath="$PROJECT_DIR$/juego.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713450856901</updated>
-      <workItem from="1713450858968" duration="6362000" />
+      <workItem from="1713450858968" duration="6513000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -89,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713456375039</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="html y css juego">
+      <created>1713457320994</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713457320994</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +105,7 @@
     <MESSAGE value="html y css inicial" />
     <MESSAGE value="html y css inicial cambios" />
     <MESSAGE value="html juego" />
-    <option name="LAST_COMMIT_MESSAGE" value="html juego" />
+    <MESSAGE value="html y css juego" />
+    <option name="LAST_COMMIT_MESSAGE" value="html y css juego" />
   </component>
 </project>
