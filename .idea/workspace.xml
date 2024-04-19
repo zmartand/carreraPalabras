@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
       <updated>1713450856901</updated>
       <workItem from="1713450858968" duration="6513000" />
       <workItem from="1713457455431" duration="27000" />
-      <workItem from="1713513736740" duration="2368000" />
+      <workItem from="1713513736740" duration="2728000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -113,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713513907196</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="declaracion atributos y constantes">
+      <created>1713516959737</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713516959737</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +131,7 @@
     <MESSAGE value="html y css inicial cambios" />
     <MESSAGE value="html y css juego" />
     <MESSAGE value="html juego" />
-    <option name="LAST_COMMIT_MESSAGE" value="html juego" />
+    <MESSAGE value="declaracion atributos y constantes" />
+    <option name="LAST_COMMIT_MESSAGE" value="declaracion atributos y constantes" />
   </component>
 </project>

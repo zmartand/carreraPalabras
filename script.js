@@ -13,4 +13,7 @@ const inputUsuario =document.getElementById("usuarioInput");
 const instruccionesJuego = document.getElementById("instrucciones");
 const resultadoJuego = document.getElementById("resultado");
 
-
+function actualizarDetalles(){
+    contadorNivel.textContent = nivel;
+    contadorVidas.textContent = vidas;
+}
