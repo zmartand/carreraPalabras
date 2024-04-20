@@ -1,6 +1,7 @@
 const palabrasArray = ["gato", "maravilloso", "javascript", "oceano", "sol", "espacio", "programar"];
 let palabraUsuario = '';
 let contadorPalabrasCorrectas = 0;
+let contadorNivel = 1;
 
 
 const inicio = () => {
@@ -21,6 +22,15 @@ const validarPalabra = (evento) => {
             console.log("Incorrecto");
         }
     }
+}
+
+const subirNivel = () => {
+    if (contadorPalabrasCorrectas % 7 === 0) {
+        contadorNivel++;
+        document.getElementById('nivel').textContent = contadorNivel;
+    }
+
+
 }
 
 inicio();
