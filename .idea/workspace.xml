@@ -57,7 +57,7 @@
       <workItem from="1713457455431" duration="27000" />
       <workItem from="1713513736740" duration="6052000" />
       <workItem from="1713637575108" duration="609000" />
-      <workItem from="1713640676496" duration="623000" />
+      <workItem from="1713640676496" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -129,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713517254639</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="js inicio base">
+      <created>1713644085556</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713644085556</updated>
+    </task>
+    <task id="LOCAL-00012" summary="js validar palabra base">
+      <created>1713644153584</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713644153584</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +157,8 @@
     <MESSAGE value="html juego" />
     <MESSAGE value="declaracion atributos y constantes" />
     <MESSAGE value="funcion actualizar detalles" />
-    <option name="LAST_COMMIT_MESSAGE" value="funcion actualizar detalles" />
+    <MESSAGE value="js inicio base" />
+    <MESSAGE value="js validar palabra base" />
+    <option name="LAST_COMMIT_MESSAGE" value="js validar palabra base" />
   </component>
 </project>
