@@ -1,5 +1,5 @@
 const palabrasArray = ["gato", "maravilloso", "javascript", "oceano", "sol", "espacio", "programar"];
-let palabraUsuario;
+let palabraUsuario = '';
 
 const inicio = () => {
     palabras = palabrasArray[Math.floor(Math.random()*palabrasArray.length)];
@@ -12,6 +12,7 @@ const validarPalabra = (evento) => {
         if (palabraUsuario === palabras) {
             inicio(); //Cambiar palabra
             console.log("Correcto");
+            document.getElementById('usuarioInput').value = "";
         } else {
             console.log("Incorrecto");
         }
