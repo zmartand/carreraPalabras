@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.html" beforeDir="false" afterPath="$PROJECT_DIR$/juego.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,7 @@
       <workItem from="1713457455431" duration="27000" />
       <workItem from="1713513736740" duration="6052000" />
       <workItem from="1713637575108" duration="609000" />
-      <workItem from="1713640676496" duration="1510000" />
+      <workItem from="1713640676496" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713644593432</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="limpiar entrada">
+      <created>1713644982690</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713644982691</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +175,7 @@
     <MESSAGE value="js inicio base" />
     <MESSAGE value="js validar palabra base" />
     <MESSAGE value="cambiar palabra" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambiar palabra" />
+    <MESSAGE value="limpiar entrada" />
+    <option name="LAST_COMMIT_MESSAGE" value="limpiar entrada" />
   </component>
 </project>

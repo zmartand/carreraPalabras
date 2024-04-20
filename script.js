@@ -1,5 +1,7 @@
 const palabrasArray = ["gato", "maravilloso", "javascript", "oceano", "sol", "espacio", "programar"];
 let palabraUsuario = '';
+let contadorPalabrasCorrectas = 0;
+
 
 const inicio = () => {
     palabras = palabrasArray[Math.floor(Math.random()*palabrasArray.length)];
@@ -13,6 +15,8 @@ const validarPalabra = (evento) => {
             inicio(); //Cambiar palabra
             console.log("Correcto");
             document.getElementById('usuarioInput').value = "";
+            contadorPalabrasCorrectas++; //crear html con contador
+            document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
         } else {
             console.log("Incorrecto");
         }
