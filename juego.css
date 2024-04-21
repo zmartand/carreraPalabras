@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-#vidas, #nivel, #tiempoRestante{
+#vidas, #nivel, #tiempoRestante, #palabrasCorrectas{
     padding: 20px;
     margin: 20px;
 }

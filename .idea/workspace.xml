@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.css" beforeDir="false" afterPath="$PROJECT_DIR$/juego.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.html" beforeDir="false" afterPath="$PROJECT_DIR$/juego.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
       <workItem from="1713637575108" duration="609000" />
       <workItem from="1713640676496" duration="3956000" />
       <workItem from="1713696667193" duration="4566000" />
-      <workItem from="1713719091411" duration="5189000" />
+      <workItem from="1713719091411" duration="7886000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -180,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713697638722</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="cambios">
+      <created>1713727318793</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713727318793</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +211,7 @@
     <MESSAGE value="contador palabras correctas" />
     <MESSAGE value="subirNivel inicio" />
     <MESSAGE value="subirNivel ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="subirNivel ok" />
+    <MESSAGE value="cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios" />
   </component>
 </project>

@@ -9,6 +9,7 @@ let vidas = 3;
 const nivelContadorSpan = document.getElementById('contarNivel');
 const vidasContadorSpan = document.getElementById('contarVidas');
 const palabraUsuario = document.getElementById('usuarioInput');
+
 const actualizarVisualizacion = () =>{
     nivelContadorSpan.textContent = nivel;
     vidasContadorSpan.textContent = vidas;
@@ -22,20 +23,19 @@ const palabraRandom = () => {
 const inicio = () => {
     palabraRandom();
     validarPalabra();
-    let tiempoRest = tiempoBase/1000;
-    document.getElementById('contarTiempoRestante').textContent = tiempoRest;
+    let tiempoRestante = tiempoBase/1000;
+    document.getElementById('contarTiempoRestante').textContent = tiempoRestante;
     intervaloJuego = setInterval(() => {
-        document.getElementById('contarTiempoRestante').textContent = --tiempoRest; // Actualizamos el elemento HTML
-        if (tiempoRest <= 0) {
+        document.getElementById('contarTiempoRestante').textContent = --tiempoRestante; // Decrementa el valor en 1 del tiempo antes de que se evalúe ña expresión
+        if (tiempoRestante === 0) {
             clearInterval(intervaloJuego);
             checkCondicionFinal();
         }
     }, 1000);
-
 }
 
 const validarPalabra = () => {
-        if (palabraUsuario.value.trim().toLocaleLowerCase() === palabras.toLowerCase()) {
+        if (palabraUsuario.value.toLocaleLowerCase() === palabras.toLowerCase()) {
             document.getElementById('usuarioInput').value = ""; // Limpiar la entrada
             clearTimeout(intervaloJuego);
             contadorPalabrasCorrectas++;
@@ -44,20 +44,17 @@ const validarPalabra = () => {
         } else {
             //console.log("Incorrecto");
         }
-
 }
 
 const subirNivel = () => {
     if (contadorPalabrasCorrectas % 2 === 0) {
         nivel++; // Incrementa primero el nivel
         if (tiempoBase > tiempoMinimo) {
-            //tiempoBase = Math.max(tiempoMinimo, tiempoBase - (nivel - 1)* 1000);
             tiempoBase = Math.max(tiempoMinimo, tiempoBase - 1000);
         }
         actualizarVisualizacion();
         inicio();
     }else {
-    palabraRandom();
     inicio();
     }
 }
@@ -65,13 +62,11 @@ const subirNivel = () => {
 const checkCondicionFinal = () => {
     vidas--;
     actualizarVisualizacion();
-    clearInterval(intervaloJuego);
     if (vidas === 0) {
         finJuego();
     } else {
         document.getElementById('resultado').textContent = "¡Incorrecto! ¡Intenta de nuevo!";
         document.getElementById('usuarioInput').value = ""; // Limpiar la entrada
-        palabraRandom();
         inicio();
     }
 }
@@ -80,7 +75,19 @@ const finJuego = () => {
     document.getElementById('palabra').textContent = '';
     document.getElementById('usuarioInput').value = '';
     document.getElementById('usuarioInput').disabled = true;
-    document.getElementById('resultado').textContent = "¡Juego terminado! Has alcanzado el nivel " + nivel;
+    document.getElementById('resultado').textContent = "¡Juego terminado! Has alcanzado el nivel " + nivel + " con " + contadorPalabrasCorrectas + " palabras correctas";
+}
+
+const reiniciarJuego = () => {
+    clearInterval(intervaloJuego);
+    contadorPalabrasCorrectas = 0;
+    nivel = 1;
+    tiempoBase = 7000;
+    vidas = 3;
+    palabraUsuario.disabled = false;
+    document.getElementById('resultado').textContent = '';
+    actualizarVisualizacion();
+    inicio();
 }
 
 
