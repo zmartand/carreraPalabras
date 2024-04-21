@@ -1,7 +1,7 @@
 const palabrasArray = ["gato", "maravilloso", "javascript", "oceano", "sol", "espacio", "programar"];
 let palabraUsuario = '';
 let contadorPalabrasCorrectas = 0;
-let contadorNivel = 1;
+let contadorNivel = document.getElementById('contarNivel').textContent;
 
 
 const inicio = () => {
@@ -14,23 +14,23 @@ const validarPalabra = (evento) => {
         palabraUsuario = document.getElementById('usuarioInput').value; // Obtener el valor del input del usuario
         if (palabraUsuario === palabras) {
             inicio(); //Cambiar palabra
-            console.log("Correcto");
+            //console.log("Correcto");
             document.getElementById('usuarioInput').value = "";
             contadorPalabrasCorrectas++; //crear html con contador
             document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
+            subirNivel();
         } else {
-            console.log("Incorrecto");
+            //console.log("Incorrecto");
         }
     }
 }
 
 const subirNivel = () => {
-    if (contadorPalabrasCorrectas % 7 === 0) {
-        contadorNivel++;
-        document.getElementById('nivel').textContent = contadorNivel;
+    if (contadorPalabrasCorrectas % 6 === 0) {
+        contadorNivel++; // Incrementa primero el nivel
+        document.getElementById('contarNivel').textContent = contadorNivel;
+        //console.log(contadorNivel);
     }
-
-
 }
 
 inicio();

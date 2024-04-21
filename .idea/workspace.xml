@@ -57,7 +57,8 @@
       <workItem from="1713457455431" duration="27000" />
       <workItem from="1713513736740" duration="6052000" />
       <workItem from="1713637575108" duration="609000" />
-      <workItem from="1713640676496" duration="3938000" />
+      <workItem from="1713640676496" duration="3956000" />
+      <workItem from="1713696667193" duration="850000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -164,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713645907024</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="subirNivel inicio">
+      <created>1713647748227</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713647748227</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +191,7 @@
     <MESSAGE value="cambiar palabra" />
     <MESSAGE value="limpiar entrada" />
     <MESSAGE value="contador palabras correctas" />
-    <option name="LAST_COMMIT_MESSAGE" value="contador palabras correctas" />
+    <MESSAGE value="subirNivel inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="subirNivel inicio" />
   </component>
 </project>
