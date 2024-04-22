@@ -1,5 +1,8 @@
 *{
     background-color: #e0e1dd;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 h2{
     font-size: 16px;
@@ -13,13 +16,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(imagenes/fondo11.jpg);
+    margin: 0 auto;
 
 }
 #titulo h1{
-    background-color: #3D5820;
+    background-color: #5983d1;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 15px;
+    color: #ffffff;
+
 }
 #titulo{
     width: 100%;
@@ -29,24 +36,29 @@ body{
 }
 
 #instrucciones{
-    border: 3.5px solid #3D5820;
+    border: 3px solid #727e94;
     margin-top: 60px;
     margin-bottom: 30px;
     width: 50%;
     text-align: center;
+    border-radius: 5%;
+    background-color: rgba(44, 72, 120, 0.4);
+    color: #ffffff;
 }
-
+#instrucciones h1,h2,h3{
+    background-color: transparent;
+}
 button{
     color: #3D5820;
     width: 20%;
     height: 30%;
     font-size: 18px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     border-radius: 40px;
     padding: 20px;
 }
 
 button:hover{
-    background-color: #3D5820;
+    background-color: #32791b;
     color: #e0e2db;
 }

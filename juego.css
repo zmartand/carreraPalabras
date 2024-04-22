@@ -1,6 +1,5 @@
 *{
-    margin: 20px;
-
+    margin: 0;
 }
 
 #contenedor1{
@@ -11,23 +10,36 @@
 }
 
 #vidas, #nivel, #tiempoRestante, #palabrasCorrectas{
-    padding: 20px;
+    padding-right: 20px;
     margin: 20px;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    background-image: url(imagenes/fondojuego2.jpg);
+    width: 100%;
 }
 
 #menu{
-    background-color: #3D5820;
+    background-color: transparent;
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #menu button{
     font-size: 20px;
     padding: 10px;
+    /*Tamaño del boton;*/
+    width: 10%;
+}
+
+#contenedor1{
+    background-color: #5992a8;
+    width: 100%;
+    margin: 0px;
 }
