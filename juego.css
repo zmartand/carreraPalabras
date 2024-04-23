@@ -7,12 +7,12 @@ body{
     text-align: center;
 }
 #tablero{
-    background-color: #e0e1dd;
+    background-color: rgba(255, 255, 255, 0.65);
     margin-right: 150px;
     margin-left: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
-    height: 95vmin;
+    height: 80vh;
 
 }
 
