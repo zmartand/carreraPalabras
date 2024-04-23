@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fondo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/escribir.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/escribir2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondo9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondoJuego.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/fondojuego2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/morado.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/morador.avif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/fondoMorado.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/moradoJuego.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagenes/moradoJuego2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juego.css" beforeDir="false" afterPath="$PROJECT_DIR$/juego.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juego.html" beforeDir="false" afterPath="$PROJECT_DIR$/juego.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +74,7 @@
       <workItem from="1713696667193" duration="4566000" />
       <workItem from="1713719091411" duration="8540000" />
       <workItem from="1713771904331" duration="2441000" />
-      <workItem from="1713803219369" duration="10152000" />
+      <workItem from="1713803219369" duration="14556000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -222,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713735775783</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="cambios estilo">
+      <created>1713814537537</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713814537537</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +239,7 @@
     <MESSAGE value="subirNivel ok" />
     <MESSAGE value="cambios" />
     <MESSAGE value="cambios + reiniciar juego" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios + reiniciar juego" />
+    <MESSAGE value="cambios estilo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios estilo" />
   </component>
 </project>

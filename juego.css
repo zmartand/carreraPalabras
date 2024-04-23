@@ -1,5 +1,19 @@
 *{
     margin: 0;
+
+}
+
+body{
+    text-align: center;
+}
+#tablero{
+    background-color: #e0e1dd;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 95vmin;
+
 }
 
 #contenedor1{
@@ -9,27 +23,25 @@
     width: 100%;
 }
 
-#vidas, #nivel, #tiempoRestante, #palabrasCorrectas{
+#vidas, #nivel, #palabrasCorrectas{
     padding-right: 20px;
     margin: 20px;
+}
+#tiempoRestante{
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
 }
 
 body{
     display: flex;
     flex-direction: column;
-
-    background-image: url(imagenes/fondojuego2.jpg);
+    background-image: url(imagenes/fondoMorado.jpg);
     width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
-#menu{
-    background-color: transparent;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 #menu button{
     font-size: 20px;
@@ -38,8 +50,3 @@ body{
     width: 10%;
 }
 
-#contenedor1{
-    background-color: #5992a8;
-    width: 100%;
-    margin: 0px;
-}

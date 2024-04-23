@@ -1,5 +1,4 @@
-const palabrasArray = ["gato", "maravilloso", "javascript", "oceano", "sol", "espacio", "programar"];
-//let palabraUsuario = '';
+const palabrasArray = ["gato", "maravilloso", "caramelo", "oceano", "sol", "espacio", "programar", "eclipse", "chocolate", "bosque", "perro", "gemelo", "mar", "tomate", "teclado", "amigable", "hogar", "marca", "computador", "paisaje", "pendiente"];
 let contadorPalabrasCorrectas = 0;
 let nivel = 1;
 let tiempoBase = 7000;

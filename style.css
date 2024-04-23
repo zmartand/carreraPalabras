@@ -1,8 +1,8 @@
 *{
     background-color: #e0e1dd;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+
 }
 h2{
     font-size: 16px;
@@ -16,28 +16,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(imagenes/fondo11.jpg);
+    background-image: url(imagenes/fondoMorado.jpg);
     margin: 0 auto;
+    background-size: cover;
+    background-position: center;
 
 }
 #titulo h1{
-    background-color: #5983d1;
+    background-color: rgba(89, 131, 209, 0.09);
     width: 100%;
     margin: 0;
-    padding: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     color: #ffffff;
-
 }
 #titulo{
     width: 100%;
     text-align: center;
     color: #e0e2db;
+    background-color: transparent;
 
 }
 
 #instrucciones{
     border: 3px solid #727e94;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 30px;
     width: 50%;
     text-align: center;
@@ -49,16 +52,17 @@ body{
     background-color: transparent;
 }
 button{
-    color: #3D5820;
+    color: #310648;
     width: 20%;
     height: 30%;
     font-size: 18px;
     margin-bottom: 2%;
     border-radius: 40px;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 button:hover{
-    background-color: #32791b;
-    color: #e0e2db;
+    background-color: #8d1e7f;
+    color: #ffffff;
 }
