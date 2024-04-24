@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juego.css" beforeDir="false" afterPath="$PROJECT_DIR$/juego.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.html" beforeDir="false" afterPath="$PROJECT_DIR$/juego.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
       </list>
@@ -68,7 +72,12 @@
       <workItem from="1713719091411" duration="8540000" />
       <workItem from="1713771904331" duration="2441000" />
       <workItem from="1713803219369" duration="14580000" />
-      <workItem from="1713879097538" duration="1262000" />
+      <workItem from="1713879097538" duration="5622000" />
+      <workItem from="1713885149456" duration="767000" />
+      <workItem from="1713981720813" duration="1007000" />
+      <workItem from="1713985544596" duration="8000" />
+      <workItem from="1713986890251" duration="7000" />
+      <workItem from="1713987271442" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -217,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713868235999</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="cambios estilo">
+      <created>1713880448268</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713880448268</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

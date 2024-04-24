@@ -1,7 +1,7 @@
-const palabrasArray = ["gato", "maravilloso", "caramelo", "oceano", "sol", "espacio", "programar", "eclipse", "chocolate", "bosque", "perro", "gemelo", "mar", "tomate", "teclado", "amigable", "hogar", "marca", "computador", "paisaje", "pendiente"];
+const palabrasArray = ["Gato", "Maravilloso", "Caramelo", "Oceano", "Sol", "Espacio", "Programar", "Eclipse", "Chocolate", "Bosque", "Perro", "Gemelo", "Mar", "Tomate", "Teclado", "Amigable", "Hogar", "Marca", "Computador", "Paisaje", "Pendiente", "Comida", "Amigo", "Estudiante", "Viaje"];
 let contadorPalabrasCorrectas = 0;
 let nivel = 1;
-let tiempoBase = 7000;
+let tiempoBase = parseInt(sessionStorage.getItem('tiempoBase')) || 7000;
 let tiempoMinimo = 2000;
 let vidas = 3;
 
@@ -17,6 +17,14 @@ const actualizarVisualizacion = () =>{
 const palabraRandom = () => {
     palabras = palabrasArray[Math.floor(Math.random()*palabrasArray.length)];
     document.getElementById('palabra').textContent = palabras;
+}
+
+const empezarJuegoTiempoPersonalizado = () =>{
+    const tiempoPersonalizado = document.getElementById('tiempoPersonalizado').value;
+    const selectedTime = document.getElementById('tiempoBase').value;
+    tiempoBase = tiempoPersonalizado ? Math.max(tiempoPersonalizado * 1000, tiempoMinimo) : selectedTime;
+    sessionStorage.setItem('tiempoBase', tiempoBase);
+    location.href = "juego.html";
 }
 
 const inicio = () => {
@@ -88,7 +96,6 @@ const reiniciarJuego = () => {
     actualizarVisualizacion();
     inicio();
 }
-
 
 actualizarVisualizacion();
 inicio();

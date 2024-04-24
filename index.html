@@ -9,31 +9,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="titulo">
-        <h1>Bienvenido al juego de Carrera de Palabras</h1>
-    </div>
-    <div id="instrucciones">
-        <h1>Instrucciones</h1>
-            <h2>Objetivo</h2>
-                <h3>Objetivo</h3>
-            <h2>¿Cómo jugar?</h2>
-                <h3>¿Cómo jugar?</h3>
-            <h2>Entrada</h2>
-                <h3>Entrada</h3>
-            <h2>Tiempo</h2>
-                <h3>Tiempo</h3>
-            <h2>Envío</h2>
-                <h3>Envío</h3>
-            <h2>Vidas</h2>
-                <h3>Vidas</h3>
-            <h2>Niveles</h2>
-                <h3>Niveles</h3>
-            <h2>Fin de juego</h2>
-                <h3>Fin de juego</h3>
+<div id="titulo">
+    <h1>Bienvenido al juego de Carrera de Palabras</h1>
+</div>
+<div id="instrucciones">
+    <h1>Instrucciones</h1>
+    <h2>Objetivo</h2>
+    <h3>Objetivo</h3>
+    <h2>¿Cómo jugar?</h2>
+    <h3>¿Cómo jugar?</h3>
+    <h2>Entrada</h2>
+    <h3>Entrada</h3>
+    <h2>Tiempo</h2>
+    <h3>Tiempo</h3>
+    <h2>Envío</h2>
+    <h3>Envío</h3>
+    <h2>Vidas</h2>
+    <h3>Vidas</h3>
+    <h2>Niveles</h2>
+    <h3>Niveles</h3>
+    <h2>Fin de juego</h2>
+    <h3>Fin de juego</h3>
 
-    </div>
-    <button onclick="location.href='juego.html'">
+</div>
+<div id="opciones">
+    <select id="tiempoBase" onchange="document.getElementById('tiempoPersonalizado').style.display = this.value === 'personalizar' ? '' : 'none';">
+        <option value="10000">10 segundos</option>
+        <option value="7000" selected>7 segundos</option>
+        <option value="5000">5 segundos</option>
+        <option value="3000">3 segundos</option>
+        <option value="personalizar">Personalizar</option>
+    </select>
+    <!-- opcional por probar -->
+    <select id="vidasBase">
+        <option value="3" selected>3 vidas</option>
+        <option value="2">2 vidas</option>
+        <option value="1">1 vida</option>
+    </select>
+    <input type="numero" id="tiempoPersonalizado" placeholder="Tiempo personalizado (Segundos)" min="2" step="1" style="display: none">
+    <button onclick="empezarJuegoTiempoPersonalizado()">
         Comenzar juego
     </button>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
