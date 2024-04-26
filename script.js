@@ -1,9 +1,9 @@
 const palabrasArray = ["Gato", "Maravilloso", "Caramelo", "Oceano", "Sol", "Espacio", "Programar", "Eclipse", "Chocolate", "Bosque", "Perro", "Gemelo", "Mar", "Tomate", "Teclado", "Amigable", "Hogar", "Marca", "Computador", "Paisaje", "Pendiente", "Comida", "Amigo", "Estudiante", "Viaje"];
 let contadorPalabrasCorrectas = 0;
 let nivel = 1;
-let tiempoBase = parseInt(sessionStorage.getItem('tiempoBase')) || 7000;
+let tiempoBase = parseInt(sessionStorage.getItem('tiempoBase'));// Obtiene el tiempo base
 let tiempoMinimo = 2000;
-let vidas = 3;
+let vidas = parseInt(sessionStorage.getItem('vidas'));// Obtiene las vidas iniciales
 
 const nivelContadorSpan = document.getElementById('contarNivel');
 const vidasContadorSpan = document.getElementById('contarVidas');
@@ -20,10 +20,12 @@ const palabraRandom = () => {
 }
 
 const empezarJuegoTiempoPersonalizado = () =>{
-    const tiempoPersonalizado = document.getElementById('tiempoPersonalizado').value;
-    const selectedTime = document.getElementById('tiempoBase').value;
-    tiempoBase = tiempoPersonalizado ? Math.max(tiempoPersonalizado * 1000, tiempoMinimo) : selectedTime;
-    sessionStorage.setItem('tiempoBase', tiempoBase);
+    //const tiempoPersonalizado = document.getElementById('tiempoPersonalizado').value;
+    const seleccionado = document.getElementById('baseTiempo').value;
+    const seleccionVidas = document.getElementById('vidasBase').value;
+    //tiempoBase = tiempoPersonalizado ? Math.max(tiempoPersonalizado * 1000, tiempoMinimo) : selectedTime;
+    sessionStorage.setItem('tiempoBase', seleccionado);// Guarda el tiempo base seleccionado en el almacenamiento de sesión
+    sessionStorage.setItem('vidas', seleccionVidas);
     location.href = "juego.html";
 }
 
@@ -42,15 +44,15 @@ const inicio = () => {
 }
 
 const validarPalabra = () => {
-        if (palabraUsuario.value.toLocaleLowerCase() === palabras.toLowerCase()) {
-            document.getElementById('usuarioInput').value = ""; // Limpiar la entrada
-            clearTimeout(intervaloJuego);
-            contadorPalabrasCorrectas++;
-            document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
-            subirNivel();
-        } else {
-            //console.log("Incorrecto");
-        }
+    if (palabraUsuario.value.toLocaleLowerCase() === palabras.toLowerCase()) {
+        document.getElementById('usuarioInput').value = ""; // Limpiar la entrada
+        clearTimeout(intervaloJuego);
+        contadorPalabrasCorrectas++;
+        document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
+        subirNivel();
+    } else {
+        //console.log("Incorrecto");
+    }
 }
 
 const subirNivel = () => {
@@ -62,7 +64,7 @@ const subirNivel = () => {
         actualizarVisualizacion();
         inicio();
     }else {
-    inicio();
+        inicio();
     }
 }
 

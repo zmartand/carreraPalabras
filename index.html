@@ -33,20 +33,24 @@
 
 </div>
 <div id="opciones">
-    <select id="tiempoBase" onchange="document.getElementById('tiempoPersonalizado').style.display = this.value === 'personalizar' ? '' : 'none';">
+    <!-- Selección tiempo -->
+    <select id="baseTiempo" onchange="document.getElementById('tiempoPersonalizado').style.display = this.value === 'personalizar' ? '' : 'none';">
         <option value="10000">10 segundos</option>
         <option value="7000" selected>7 segundos</option>
         <option value="5000">5 segundos</option>
         <option value="3000">3 segundos</option>
-        <option value="personalizar">Personalizar</option>
+        <!--    <option value="personalizar">Personalizar</option>-->
     </select>
-    <!-- opcional por probar -->
+    <!-- Selección vidas -->
     <select id="vidasBase">
+        <option value="10" >10 vidas</option>
+        <option value="7">7 vidas</option>
+        <option value="5">5 vidas</option>
         <option value="3" selected>3 vidas</option>
         <option value="2">2 vidas</option>
         <option value="1">1 vida</option>
     </select>
-    <input type="numero" id="tiempoPersonalizado" placeholder="Tiempo personalizado (Segundos)" min="2" step="1" style="display: none">
+    <!--<input type="numero" id="tiempoPersonalizado" placeholder="Tiempo personalizado (Segundos)" min="2" step="1" style="display: none">-->
     <button onclick="empezarJuegoTiempoPersonalizado()">
         Comenzar juego
     </button>
