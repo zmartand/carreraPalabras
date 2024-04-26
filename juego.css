@@ -68,3 +68,8 @@ body{
     width: 10%;
 }
 
+#resultado{
+    font-size: 50px;
+    margin: 20px;
+}
+

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="810f384c-3df6-4b30-9d2b-c7b99b94504f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.css" beforeDir="false" afterPath="$PROJECT_DIR$/juego.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <workItem from="1713986890251" duration="7000" />
       <workItem from="1713987271442" duration="410000" />
       <workItem from="1714133968711" duration="104000" />
-      <workItem from="1714135921233" duration="38000" />
+      <workItem from="1714135921233" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="html inicial pagina-inicio">
       <created>1713451339370</created>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713987695746</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="cambios">
+      <created>1714135974748</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714135974748</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,10 +267,10 @@
     <MESSAGE value="contador palabras correctas" />
     <MESSAGE value="subirNivel inicio" />
     <MESSAGE value="subirNivel ok" />
-    <MESSAGE value="cambios" />
     <MESSAGE value="cambios + reiniciar juego" />
     <MESSAGE value="cambios estilo" />
     <MESSAGE value="configurable" />
-    <option name="LAST_COMMIT_MESSAGE" value="configurable" />
+    <MESSAGE value="cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios" />
   </component>
 </project>
