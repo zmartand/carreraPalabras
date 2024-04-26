@@ -91,8 +91,8 @@ const reiniciarJuego = () => {
     clearInterval(intervaloJuego);
     contadorPalabrasCorrectas = 0;
     nivel = 1;
-    tiempoBase = 7000;
-    vidas = 3;
+    tiempoBase = parseInt(sessionStorage.getItem('tiempoBase'));
+    vidas = parseInt(sessionStorage.getItem('vidas'));
     palabraUsuario.disabled = false;
     document.getElementById('resultado').textContent = '';
     actualizarVisualizacion();
