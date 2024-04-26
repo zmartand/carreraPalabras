@@ -12,6 +12,7 @@ const palabraUsuario = document.getElementById('usuarioInput');
 const actualizarVisualizacion = () =>{
     nivelContadorSpan.textContent = nivel;
     vidasContadorSpan.textContent = vidas;
+    document.getElementById('resultado').textContent = "";
 }
 
 const palabraRandom = () => {
@@ -20,10 +21,8 @@ const palabraRandom = () => {
 }
 
 const empezarJuegoTiempoPersonalizado = () =>{
-    //const tiempoPersonalizado = document.getElementById('tiempoPersonalizado').value;
     const seleccionado = document.getElementById('baseTiempo').value;
     const seleccionVidas = document.getElementById('vidasBase').value;
-    //tiempoBase = tiempoPersonalizado ? Math.max(tiempoPersonalizado * 1000, tiempoMinimo) : selectedTime;
     sessionStorage.setItem('tiempoBase', seleccionado);// Guarda el tiempo base seleccionado en el almacenamiento de sesión
     sessionStorage.setItem('vidas', seleccionVidas);
     location.href = "juego.html";
@@ -51,7 +50,7 @@ const validarPalabra = () => {
         document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
         subirNivel();
     } else {
-        //console.log("Incorrecto");
+        console.log("Incorrecto");
     }
 }
 
