@@ -1,3 +1,4 @@
+//Variables y constantes del juego
 const palabrasArray = ["Gato", "Maravilloso", "Caramelo", "Oceano", "Sol", "Espacio", "Programar", "Eclipse", "Chocolate", "Bosque", "Perro", "Gemelo", "Mar", "Tomate", "Teclado", "Amigable", "Hogar", "Marca", "Computador", "Paisaje", "Pendiente", "Comida", "Amigo", "Estudiante", "Viaje"];
 let contadorPalabrasCorrectas = 0;
 let nivel = 1;
@@ -12,7 +13,6 @@ const palabraUsuario = document.getElementById('usuarioInput');
 const actualizarVisualizacion = () =>{
     nivelContadorSpan.textContent = nivel;
     vidasContadorSpan.textContent = vidas;
-    document.getElementById('resultado').textContent = "";
 }
 
 const palabraRandom = () => {
@@ -20,7 +20,7 @@ const palabraRandom = () => {
     document.getElementById('palabra').textContent = palabras;
 }
 
-const empezarJuegoTiempoPersonalizado = () =>{
+const empezarJuegoSeleccion = () =>{
     const seleccionado = document.getElementById('baseTiempo').value;
     const seleccionVidas = document.getElementById('vidasBase').value;
     sessionStorage.setItem('tiempoBase', seleccionado);// Guarda el tiempo base seleccionado en el almacenamiento de sesión
@@ -45,6 +45,7 @@ const inicio = () => {
 const validarPalabra = () => {
     if (palabraUsuario.value.toLocaleLowerCase() === palabras.toLowerCase()) {
         document.getElementById('usuarioInput').value = ""; // Limpiar la entrada
+        document.getElementById('instruccion').textContent = '';
         clearTimeout(intervaloJuego);
         contadorPalabrasCorrectas++;
         document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
@@ -55,7 +56,8 @@ const validarPalabra = () => {
 }
 
 const subirNivel = () => {
-    if (contadorPalabrasCorrectas % 2 === 0) {
+    document.getElementById('resultado').textContent = '';
+    if (contadorPalabrasCorrectas % 5 === 0) { // Si el contador de palabras correctas es múltiplo de 5
         nivel++; // Incrementa primero el nivel
         if (tiempoBase > tiempoMinimo) {
             tiempoBase = Math.max(tiempoMinimo, tiempoBase - 1000);
