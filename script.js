@@ -37,8 +37,8 @@ const inicio = () => {
     document.getElementById('contarTiempoRestante').textContent = tiempoRestante; // Muestra el tiempo restante
     intervaloJuego = setInterval(() => { // Inicia intervalo de tiempo (tiempo cada palabra)
         document.getElementById('contarTiempoRestante').textContent = --tiempoRestante; // Decrementa el valor en 1 del tiempo antes de que se evalúe La expresión
-        if (tiempoRestante === 0) { // Si el tiempo restante es igual a 0 se detiene el intervalo y se evalúa la condición final
-            clearInterval(intervaloJuego);
+        if (tiempoRestante === 0) { // Si el tiempo restante es igual a 0
+            clearInterval(intervaloJuego); //detiene el intervalo cuando se agota el tiempo
             checkCondicionFinal();
         }
     }, 1000);
@@ -48,7 +48,7 @@ const validarPalabra = () => {
     if (palabraUsuario.value.toLocaleLowerCase() === palabras.toLowerCase()) { //comparamos palabras, aceptamos minusculas y mayusculas
         document.getElementById('usuarioInput').value = ""; // Limpiar la entrada para que el usuario no tenga que borrar el texto
         document.getElementById('instruccion').textContent = ''; //Elimina la instruccion dinamica
-        clearInterval(intervaloJuego); // Limpia el intervalo de tiempo cuando acierta la palabra
+        clearInterval(intervaloJuego); // detiene el intervalo de tiempo cuando acierta la palabra
         contadorPalabrasCorrectas++;
         document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
         subirNivel();
