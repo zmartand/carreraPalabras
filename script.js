@@ -48,7 +48,7 @@ const validarPalabra = () => {
     if (palabraUsuario.value.toLocaleLowerCase() === palabras.toLowerCase()) { //comparamos palabras, aceptamos minusculas y mayusculas
         document.getElementById('usuarioInput').value = ""; // Limpiar la entrada para que el usuario no tenga que borrar el texto
         document.getElementById('instruccion').textContent = ''; //Elimina la instruccion dinamica
-        clearTimeout(intervaloJuego); // Limpia el intervalo de tiempo cuando acierta la palabra
+        clearInterval(intervaloJuego); // Limpia el intervalo de tiempo cuando acierta la palabra
         contadorPalabrasCorrectas++;
         document.getElementById('contarPalabrasCorrectas').textContent = contadorPalabrasCorrectas;
         subirNivel();
